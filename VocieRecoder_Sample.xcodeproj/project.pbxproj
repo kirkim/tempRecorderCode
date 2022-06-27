@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEA097E22869A67B00170245 /* Recoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E12869A67B00170245 /* Recoder.swift */; };
+		FEA097E52869B3B700170245 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E42869B3B700170245 /* RecordManager.swift */; };
+		FEA097E82869BE0000170245 /* RecordControllerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E72869BE0000170245 /* RecordControllerStackView.swift */; };
+		FEA097EA2869C07300170245 /* RecordSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E92869C07300170245 /* RecordSliderView.swift */; };
+		FEA097EC2869C9E200170245 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097EB2869C9E200170245 /* AudioPlayerManager.swift */; };
+		FEA582F628697CE0009316D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA582F528697CE0009316D8 /* AppDelegate.swift */; };
+		FEA582F828697CE0009316D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA582F728697CE0009316D8 /* SceneDelegate.swift */; };
+		FEA582FF28697CE9009316D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA582FE28697CE9009316D8 /* Assets.xcassets */; };
+		FEA5830228697CE9009316D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA5830028697CE9009316D8 /* LaunchScreen.storyboard */; };
+		FEA5830B28697D78009316D8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5830A28697D78009316D8 /* RecordListViewController.swift */; };
+		FEA5830E28698FF4009316D8 /* DoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */; };
+		FEA58311286992BC009316D8 /* RecordListTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA58310286992BC009316D8 /* RecordListTopBarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEA097E12869A67B00170245 /* Recoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recoder.swift; sourceTree = "<group>"; };
+		FEA097E42869B3B700170245 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
+		FEA097E72869BE0000170245 /* RecordControllerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordControllerStackView.swift; sourceTree = "<group>"; };
+		FEA097E92869C07300170245 /* RecordSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSliderView.swift; sourceTree = "<group>"; };
+		FEA097EB2869C9E200170245 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		FEA582F228697CE0009316D8 /* VocieRecoder_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocieRecoder_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA582F528697CE0009316D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEA582F728697CE0009316D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEA582FE28697CE9009316D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEA5830128697CE9009316D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEA5830328697CE9009316D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEA5830A28697D78009316D8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
+		FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoRecordingViewController.swift; sourceTree = "<group>"; };
+		FEA58310286992BC009316D8 /* RecordListTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListTopBarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEA582EF28697CE0009316D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEA097E02869A65F00170245 /* Recoder */ = {
+			isa = PBXGroup;
+			children = (
+				FEA097E12869A67B00170245 /* Recoder.swift */,
+				FEA097E62869BDE500170245 /* SubComponents */,
+			);
+			path = Recoder;
+			sourceTree = "<group>";
+		};
+		FEA097E32869B38200170245 /* RecordManager */ = {
+			isa = PBXGroup;
+			children = (
+				FEA097E42869B3B700170245 /* RecordManager.swift */,
+				FEA097EB2869C9E200170245 /* AudioPlayerManager.swift */,
+			);
+			path = RecordManager;
+			sourceTree = "<group>";
+		};
+		FEA097E62869BDE500170245 /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FEA097E72869BE0000170245 /* RecordControllerStackView.swift */,
+				FEA097E92869C07300170245 /* RecordSliderView.swift */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+		FEA582E928697CE0009316D8 = {
+			isa = PBXGroup;
+			children = (
+				FEA582F428697CE0009316D8 /* VocieRecoder_Sample */,
+				FEA582F328697CE0009316D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEA582F328697CE0009316D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEA582F228697CE0009316D8 /* VocieRecoder_Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEA582F428697CE0009316D8 /* VocieRecoder_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5830928697D63009316D8 /* RecordListPage */,
+				FEA5830C28698F49009316D8 /* DoRecordingPage */,
+				FEA582F528697CE0009316D8 /* AppDelegate.swift */,
+				FEA582F728697CE0009316D8 /* SceneDelegate.swift */,
+				FEA582FE28697CE9009316D8 /* Assets.xcassets */,
+				FEA5830028697CE9009316D8 /* LaunchScreen.storyboard */,
+				FEA5830328697CE9009316D8 /* Info.plist */,
+			);
+			path = VocieRecoder_Sample;
+			sourceTree = "<group>";
+		};
+		FEA5830928697D63009316D8 /* RecordListPage */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5830A28697D78009316D8 /* RecordListViewController.swift */,
+				FEA5830F2869929C009316D8 /* SubComponents */,
+			);
+			path = RecordListPage;
+			sourceTree = "<group>";
+		};
+		FEA5830C28698F49009316D8 /* DoRecordingPage */ = {
+			isa = PBXGroup;
+			children = (
+				FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */,
+				FEA097E02869A65F00170245 /* Recoder */,
+				FEA097E32869B38200170245 /* RecordManager */,
+			);
+			path = DoRecordingPage;
+			sourceTree = "<group>";
+		};
+		FEA5830F2869929C009316D8 /* SubComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FEA58310286992BC009316D8 /* RecordListTopBarView.swift */,
+			);
+			path = SubComponents;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEA582F128697CE0009316D8 /* VocieRecoder_Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEA5830628697CE9009316D8 /* Build configuration list for PBXNativeTarget "VocieRecoder_Sample" */;
+			buildPhases = (
+				FEA582EE28697CE0009316D8 /* Sources */,
+				FEA582EF28697CE0009316D8 /* Frameworks */,
+				FEA582F028697CE0009316D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VocieRecoder_Sample;
+			productName = VocieRecoder_Sample;
+			productReference = FEA582F228697CE0009316D8 /* VocieRecoder_Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEA582EA28697CE0009316D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FEA582F128697CE0009316D8 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = FEA582ED28697CE0009316D8 /* Build configuration list for PBXProject "VocieRecoder_Sample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEA582E928697CE0009316D8;
+			productRefGroup = FEA582F328697CE0009316D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEA582F128697CE0009316D8 /* VocieRecoder_Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEA582F028697CE0009316D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA5830228697CE9009316D8 /* LaunchScreen.storyboard in Resources */,
+				FEA582FF28697CE9009316D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEA582EE28697CE0009316D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA097E22869A67B00170245 /* Recoder.swift in Sources */,
+				FEA097EC2869C9E200170245 /* AudioPlayerManager.swift in Sources */,
+				FEA097E82869BE0000170245 /* RecordControllerStackView.swift in Sources */,
+				FEA5830B28697D78009316D8 /* RecordListViewController.swift in Sources */,
+				FEA582F628697CE0009316D8 /* AppDelegate.swift in Sources */,
+				FEA58311286992BC009316D8 /* RecordListTopBarView.swift in Sources */,
+				FEA582F828697CE0009316D8 /* SceneDelegate.swift in Sources */,
+				FEA097E52869B3B700170245 /* RecordManager.swift in Sources */,
+				FEA097EA2869C07300170245 /* RecordSliderView.swift in Sources */,
+				FEA5830E28698FF4009316D8 /* DoRecordingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEA5830028697CE9009316D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEA5830128697CE9009316D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEA5830428697CE9009316D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEA5830528697CE9009316D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEA5830728697CE9009316D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CNGL9PR533;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VocieRecoder_Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kirkim.VocieRecoder-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FEA5830828697CE9009316D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CNGL9PR533;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VocieRecoder_Sample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kirkim.VocieRecoder-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEA582ED28697CE0009316D8 /* Build configuration list for PBXProject "VocieRecoder_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA5830428697CE9009316D8 /* Debug */,
+				FEA5830528697CE9009316D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEA5830628697CE9009316D8 /* Build configuration list for PBXNativeTarget "VocieRecoder_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEA5830728697CE9009316D8 /* Debug */,
+				FEA5830828697CE9009316D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEA582EA28697CE0009316D8 /* Project object */;
+}
