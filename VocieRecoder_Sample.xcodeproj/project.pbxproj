@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEA097E22869A67B00170245 /* Recoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E12869A67B00170245 /* Recoder.swift */; };
+		FE86C3E1286ACD8100574723 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE86C3E0286ACD8100574723 /* GoogleService-Info.plist */; };
+		FE86C3E4286ACF9E00574723 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FE86C3E3286ACF9E00574723 /* FirebaseStorage */; };
+		FE86C3E9286AE63700574723 /* RecordNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86C3E8286AE63700574723 /* RecordNetworkManager.swift */; };
+		FE86C3EC286AE79F00574723 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86C3EB286AE79F00574723 /* Config.swift */; };
+		FE86C3EE286AF6AD00574723 /* RecordDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86C3ED286AF6AD00574723 /* RecordDelegate.swift */; };
+		FE86C3F0286B02A500574723 /* RecordAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE86C3EF286B02A500574723 /* RecordAccessManager.swift */; };
+		FEA097E22869A67B00170245 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E12869A67B00170245 /* Recorder.swift */; };
 		FEA097E52869B3B700170245 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E42869B3B700170245 /* RecordManager.swift */; };
 		FEA097E82869BE0000170245 /* RecordControllerStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E72869BE0000170245 /* RecordControllerStackView.swift */; };
 		FEA097EA2869C07300170245 /* RecordSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA097E92869C07300170245 /* RecordSliderView.swift */; };
@@ -19,10 +25,19 @@
 		FEA5830B28697D78009316D8 /* RecordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5830A28697D78009316D8 /* RecordListViewController.swift */; };
 		FEA5830E28698FF4009316D8 /* DoRecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */; };
 		FEA58311286992BC009316D8 /* RecordListTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA58310286992BC009316D8 /* RecordListTopBarView.swift */; };
+		FEB7A0C5286C8FC800AB1542 /* ViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7A0C4286C8FC800AB1542 /* ViewContoller.swift */; };
+		FEEC6973286C041E002E020F /* RecordListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC6972286C041E002E020F /* RecordListCell.swift */; };
+		FEEC6975286C0F73002E020F /* RecordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC6974286C0F73002E020F /* RecordListViewModel.swift */; };
+		FEEC6979286C36AF002E020F /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC6978286C36AF002E020F /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FEA097E12869A67B00170245 /* Recoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recoder.swift; sourceTree = "<group>"; };
+		FE86C3E0286ACD8100574723 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE86C3E8286AE63700574723 /* RecordNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordNetworkManager.swift; sourceTree = "<group>"; };
+		FE86C3EB286AE79F00574723 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FE86C3ED286AF6AD00574723 /* RecordDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordDelegate.swift; sourceTree = "<group>"; };
+		FE86C3EF286B02A500574723 /* RecordAccessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAccessManager.swift; sourceTree = "<group>"; };
+		FEA097E12869A67B00170245 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		FEA097E42869B3B700170245 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
 		FEA097E72869BE0000170245 /* RecordControllerStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordControllerStackView.swift; sourceTree = "<group>"; };
 		FEA097E92869C07300170245 /* RecordSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSliderView.swift; sourceTree = "<group>"; };
@@ -36,6 +51,10 @@
 		FEA5830A28697D78009316D8 /* RecordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewController.swift; sourceTree = "<group>"; };
 		FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoRecordingViewController.swift; sourceTree = "<group>"; };
 		FEA58310286992BC009316D8 /* RecordListTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListTopBarView.swift; sourceTree = "<group>"; };
+		FEB7A0C4286C8FC800AB1542 /* ViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContoller.swift; sourceTree = "<group>"; };
+		FEEC6972286C041E002E020F /* RecordListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListCell.swift; sourceTree = "<group>"; };
+		FEEC6974286C0F73002E020F /* RecordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListViewModel.swift; sourceTree = "<group>"; };
+		FEEC6978286C36AF002E020F /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,28 +62,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86C3E4286ACF9E00574723 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FEA097E02869A65F00170245 /* Recoder */ = {
+		FE86C3E7286AE61400574723 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FEA097E12869A67B00170245 /* Recoder.swift */,
-				FEA097E62869BDE500170245 /* SubComponents */,
+				FE86C3E8286AE63700574723 /* RecordNetworkManager.swift */,
 			);
-			path = Recoder;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		FEA097E32869B38200170245 /* RecordManager */ = {
+		FE86C3EA286AE79200574723 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				FE86C3EB286AE79F00574723 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		FEA097E02869A65F00170245 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				FEA097E12869A67B00170245 /* Recorder.swift */,
+				FE86C3ED286AF6AD00574723 /* RecordDelegate.swift */,
+				FEA097E62869BDE500170245 /* SubComponents */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		FEA097E32869B38200170245 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
 				FEA097E42869B3B700170245 /* RecordManager.swift */,
+				FE86C3EF286B02A500574723 /* RecordAccessManager.swift */,
 				FEA097EB2869C9E200170245 /* AudioPlayerManager.swift */,
 			);
-			path = RecordManager;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		FEA097E62869BDE500170245 /* SubComponents */ = {
@@ -97,11 +135,17 @@
 			children = (
 				FEA5830928697D63009316D8 /* RecordListPage */,
 				FEA5830C28698F49009316D8 /* DoRecordingPage */,
+				FEA097E32869B38200170245 /* Manager */,
+				FE86C3E7286AE61400574723 /* Network */,
+				FE86C3EA286AE79200574723 /* Config */,
 				FEA582F528697CE0009316D8 /* AppDelegate.swift */,
 				FEA582F728697CE0009316D8 /* SceneDelegate.swift */,
 				FEA582FE28697CE9009316D8 /* Assets.xcassets */,
 				FEA5830028697CE9009316D8 /* LaunchScreen.storyboard */,
 				FEA5830328697CE9009316D8 /* Info.plist */,
+				FE86C3E0286ACD8100574723 /* GoogleService-Info.plist */,
+				FEEC6978286C36AF002E020F /* CustomNavigationBar.swift */,
+				FEB7A0C4286C8FC800AB1542 /* ViewContoller.swift */,
 			);
 			path = VocieRecoder_Sample;
 			sourceTree = "<group>";
@@ -110,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA5830A28697D78009316D8 /* RecordListViewController.swift */,
+				FEEC6974286C0F73002E020F /* RecordListViewModel.swift */,
 				FEA5830F2869929C009316D8 /* SubComponents */,
 			);
 			path = RecordListPage;
@@ -119,8 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA5830D28698FF4009316D8 /* DoRecordingViewController.swift */,
-				FEA097E02869A65F00170245 /* Recoder */,
-				FEA097E32869B38200170245 /* RecordManager */,
+				FEA097E02869A65F00170245 /* Recorder */,
 			);
 			path = DoRecordingPage;
 			sourceTree = "<group>";
@@ -129,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				FEA58310286992BC009316D8 /* RecordListTopBarView.swift */,
+				FEEC6972286C041E002E020F /* RecordListCell.swift */,
 			);
 			path = SubComponents;
 			sourceTree = "<group>";
@@ -149,6 +194,9 @@
 			dependencies = (
 			);
 			name = VocieRecoder_Sample;
+			packageProductDependencies = (
+				FE86C3E3286ACF9E00574723 /* FirebaseStorage */,
+			);
 			productName = VocieRecoder_Sample;
 			productReference = FEA582F228697CE0009316D8 /* VocieRecoder_Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +225,9 @@
 				Base,
 			);
 			mainGroup = FEA582E928697CE0009316D8;
+			packageReferences = (
+				FE86C3E2286ACF9E00574723 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FEA582F328697CE0009316D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +244,7 @@
 			files = (
 				FEA5830228697CE9009316D8 /* LaunchScreen.storyboard in Resources */,
 				FEA582FF28697CE9009316D8 /* Assets.xcassets in Resources */,
+				FE86C3E1286ACD8100574723 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,12 +255,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA097E22869A67B00170245 /* Recoder.swift in Sources */,
+				FEA097E22869A67B00170245 /* Recorder.swift in Sources */,
+				FE86C3EE286AF6AD00574723 /* RecordDelegate.swift in Sources */,
+				FEEC6973286C041E002E020F /* RecordListCell.swift in Sources */,
 				FEA097EC2869C9E200170245 /* AudioPlayerManager.swift in Sources */,
 				FEA097E82869BE0000170245 /* RecordControllerStackView.swift in Sources */,
 				FEA5830B28697D78009316D8 /* RecordListViewController.swift in Sources */,
 				FEA582F628697CE0009316D8 /* AppDelegate.swift in Sources */,
+				FE86C3F0286B02A500574723 /* RecordAccessManager.swift in Sources */,
+				FE86C3EC286AE79F00574723 /* Config.swift in Sources */,
+				FEB7A0C5286C8FC800AB1542 /* ViewContoller.swift in Sources */,
 				FEA58311286992BC009316D8 /* RecordListTopBarView.swift in Sources */,
+				FE86C3E9286AE63700574723 /* RecordNetworkManager.swift in Sources */,
+				FEEC6975286C0F73002E020F /* RecordListViewModel.swift in Sources */,
+				FEEC6979286C36AF002E020F /* CustomNavigationBar.swift in Sources */,
 				FEA582F828697CE0009316D8 /* SceneDelegate.swift in Sources */,
 				FEA097E52869B3B700170245 /* RecordManager.swift in Sources */,
 				FEA097EA2869C07300170245 /* RecordSliderView.swift in Sources */,
@@ -422,6 +482,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE86C3E2286ACF9E00574723 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE86C3E3286ACF9E00574723 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE86C3E2286ACF9E00574723 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEA582EA28697CE0009316D8 /* Project object */;
 }

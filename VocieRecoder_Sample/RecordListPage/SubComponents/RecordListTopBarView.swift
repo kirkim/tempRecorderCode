@@ -35,7 +35,7 @@ class RecordListTopBarView: UIView {
     
     @objc private func handleAddRecordButton() {
         let vc = DoRecordingViewController()
-        rootViewController?.present(vc, animated: true)
+        rootViewController?.navigationController?.pushViewController(vc, animated: true)
     }
     
     private func layout() {

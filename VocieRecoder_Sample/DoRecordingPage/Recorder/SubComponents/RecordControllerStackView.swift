@@ -13,10 +13,11 @@ class RecordControllerStackView: UIStackView {
     private let gobackward5secondsButton = UIButton()
     private let goforward5secondsButton = UIButton()
     private let recordButton = UIButton()
-    private let manager: RecordManager
+    private let recordManager: RecordManager
+    private let playManager = AudioPlayerManager.shared
     
     init(_ recordManager: RecordManager = .shared) {
-        self.manager = recordManager
+        self.recordManager = recordManager
         super.init(frame: CGRect.zero)
         
         attribute()
@@ -39,26 +40,26 @@ extension RecordControllerStackView {
     }
     
     @objc private func handlePlayButton() {
-        print(manager.isPlaying())
-        if (manager.isPlaying()) {
+        print(recordManager.isPlaying())
+        if (recordManager.isPlaying()) {
             playButton.setImage(UIImage(systemName: "play"), for: .normal)
-            manager.pause()
+            recordManager.pause()
         } else {
             playButton.setImage(UIImage(systemName: "pause"), for: .normal)
-            manager.play()
+            recordManager.play()
         }
     }
     
     @objc private func handleGobackward5secondsButton() {
-        manager.gobackward5seconds()
+        playManager.gobackward5seconds()
     }
     
     @objc private func handleGoforward5secondsButton() {
-        manager.goforward5seconds()
+        playManager.goforward5seconds()
     }
     
     @objc private func handleRecordButton() {
-        manager.record()
+        recordManager.record()
     }
 }
 

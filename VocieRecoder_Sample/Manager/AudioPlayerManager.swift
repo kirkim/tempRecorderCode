@@ -28,6 +28,20 @@ class AudioPlayerManager {
     func play() {
         player.play()
     }
+    
+    func gobackward5seconds() {
+        //TODO: 5초 앞으로 당기기 기능 구현하기 [x]
+        print("goBack5seconds")
+    }
+    
+    func goforward5seconds() {
+        //TODO: 5초 뒤로 당기기 기능 구현하기 [x]
+        print("goforward5seconds")
+    }
+    
+    func currentTime() {
+        
+    }
 }
 
 extension AVPlayer {

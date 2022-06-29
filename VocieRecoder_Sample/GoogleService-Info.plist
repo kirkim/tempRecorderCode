@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>241334867214-6hv8re094o7dblbg00t9oghnl243s4pj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.241334867214-6hv8re094o7dblbg00t9oghnl243s4pj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjvgM47LqTdU1Lv_c56pQSMQ74hG7P3dA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>241334867214</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kirkim.VocieRecoder-Sample</string>
+	<key>PROJECT_ID</key>
+	<string>voice-recoder-1498b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>voice-recoder-1498b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:241334867214:ios:f184f12f90f2716c7cf35f</string>
+</dict>
+</plist>
