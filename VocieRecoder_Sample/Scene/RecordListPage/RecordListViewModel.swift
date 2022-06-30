@@ -1,11 +1,12 @@
 //
 //  RecordListViewModel.swift
-//  VocieRecoder_Sample
+//  VoiceRecorder
 //
 //  Created by 김기림 on 2022/06/29.
 //
 
 import Foundation
+import SwiftUI
 
 class RecordListViewModel {
     private var cellData: [String] = []

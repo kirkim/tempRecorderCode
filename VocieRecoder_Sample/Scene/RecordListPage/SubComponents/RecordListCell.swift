@@ -1,6 +1,6 @@
 //
-//  RecordListCelll.swift
-//  VocieRecoder_Sample
+//  RecordListCell.swift
+//  VoiceRecorder
 //
 //  Created by 김기림 on 2022/06/29.
 //
@@ -34,6 +34,7 @@ class RecordListCell: UITableViewCell {
     }
     
     private func attribute() {
+        self.selectionStyle = .none
         //temp
         self.contentView.backgroundColor = .purple
     }
