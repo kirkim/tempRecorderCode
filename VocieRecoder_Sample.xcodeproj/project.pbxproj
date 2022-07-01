@@ -149,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				FEB649AB286DDF1F009F1673 /* RecordListViewController.swift */,
-				FEB649AC286DDF1F009F1673 /* SubComponents */,
 				FEB649AE286DDF1F009F1673 /* RecordListViewModel.swift */,
+				FEB649AC286DDF1F009F1673 /* SubComponents */,
 			);
 			path = RecordListPage;
 			sourceTree = "<group>";
