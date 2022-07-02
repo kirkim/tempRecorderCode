@@ -11,6 +11,7 @@ import UIKit
 class RecordListModel {
     private var cellData: [String] = []
     private let networkManager = RecordNetworkManager()
+    private let playListDBManager = RecordPlaylistDB()
     
     func getCellData(_ indexPath: IndexPath) -> String {
         return cellData[indexPath.row]
@@ -23,7 +24,11 @@ class RecordListModel {
     func update(completion: (() -> ())? = nil) {
         networkManager.getRecordList { [weak self] data in
             guard let data = data else { return }
-            self?.cellData = data
+            let frontList = self?.playListDBManager.getData().filter { data.contains($0) }
+            let backList = data.filter { frontList?.contains($0) == false }
+
+            self?.cellData = (frontList ?? []) + backList
+            self?.playListDBManager.update(playList: self?.cellData ?? [])
             completion?()
         }
     }
@@ -59,11 +64,12 @@ class RecordListModel {
             BeforeIndexPath.value = indexPath
         case .changed:
             if let beforeIndexPath = BeforeIndexPath.value, beforeIndexPath != indexPath {
-//                let beforeValue = players[beforeIndexPath.row]
-//                let afterValue = players[indexPath.row]
-//                players[beforeIndexPath.row] = afterValue
-//                players[indexPath.row] = beforeValue
+                let beforeValue = cellData[beforeIndexPath.row]
+                let afterValue = cellData[indexPath.row]
+                cellData[beforeIndexPath.row] = afterValue
+                cellData[indexPath.row] = beforeValue
                 tableView.moveRow(at: beforeIndexPath, to: indexPath)
+                playListDBManager.update(playList: cellData)
                 
                 BeforeIndexPath.value = indexPath
             }
