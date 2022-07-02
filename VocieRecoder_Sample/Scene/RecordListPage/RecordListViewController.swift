@@ -16,7 +16,7 @@ class RecordListViewController: UIViewController {
         attribute()
         layout()
         setRefresh()
-        setupLongGestureRecognizerOnCell()
+//        setupLongGestureRecognizerOnCell()
     }
     
     required init?(coder: NSCoder) {
@@ -78,6 +78,7 @@ extension RecordListViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         cell.setData(filename: viewModel.getCellData(indexPath))
+        cell.addTapGesture(action: handleLongPress(with: ))
         return cell
     }
     
@@ -96,17 +97,6 @@ extension RecordListViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: 데이터를 받고나서 페이지를 열지 or 페이지를 열고 데이터를 받아올지 고민하기
-//        tableView.allowsSelection = false
-//        viewModel.didSelectedCell(indexPath) { [weak self] data in
-//            guard let data = data else {
-//                self?.tableView.allowsSelection = true
-//                return
-//            }
-//            let vc = ViewController()
-//            self?.navigationController?.pushViewController(vc, animated: true)
-//            self?.tableView.allowsSelection = true
-//        }
         
         let data = viewModel.getCellData(indexPath)
         let vc = PlayerViewController()
@@ -131,44 +121,17 @@ extension RecordListViewController {
 
 //MARK: - 탭제스쳐
 extension RecordListViewController: UIGestureRecognizerDelegate {
-    private func setupLongGestureRecognizerOnCell() {
-        let longPressedGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(with:)))
-        longPressedGesture.minimumPressDuration = 0.5
-//        longPressedGesture.delegate = self
-        longPressedGesture.delaysTouchesBegan = true
-        tableView.addGestureRecognizer(longPressedGesture)
-    }
+//    private func setupLongGestureRecognizerOnCell() {
+//        let longPressedGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(with:)))
+//        longPressedGesture.minimumPressDuration = 0.5
+////        longPressedGesture.delegate = self
+//        longPressedGesture.delaysTouchesBegan = true
+//        tableView.addGestureRecognizer(longPressedGesture)
+//    }
     
-    @objc func handleLongPress(with sender: UILongPressGestureRecognizer) {
-        let p = sender.location(in: tableView)
-
-        guard let indexPath = tableView.indexPathForRow(at: p) else {
-            print("fail to find indexPath!")
-            return
-        }
-        print("Long press at item: \(indexPath.row)")
-        
-        struct BeforeIndexPath {
-            static var value: IndexPath?
-        }
-        
-        switch sender.state {
-        case .began:
-            BeforeIndexPath.value = indexPath
-        case .changed:
-            if let beforeIndexPath = BeforeIndexPath.value, beforeIndexPath != indexPath {
-//                let beforeValue = players[beforeIndexPath.row]
-//                let afterValue = players[indexPath.row]
-//                players[beforeIndexPath.row] = afterValue
-//                players[indexPath.row] = beforeValue
-                tableView.moveRow(at: beforeIndexPath, to: indexPath)
-                
-                BeforeIndexPath.value = indexPath
-            }
-        default:
-            // TODO animation
-            break
-        }
-
-            }
+    func handleLongPress(with sender: UILongPressGestureRecognizer) {
+        viewModel.swapByPress(with: sender, to: self.tableView)
+//        print("here")
+//        let point = sender.location(in: tableView)
+    }
 }

@@ -29,6 +29,7 @@
 		FEB649C4286DDFF3009F1673 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB649C1286DDFF3009F1673 /* RecordManager.swift */; };
 		FEB649CA286DE004009F1673 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB649C9286DE004009F1673 /* UIButton+.swift */; };
 		FEB7A0C5286C8FC800AB1542 /* ViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB7A0C4286C8FC800AB1542 /* ViewContoller.swift */; };
+		FED79BC3286EF80C002195DD /* RecordListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79BC2286EF80C002195DD /* RecordListModel.swift */; };
 		FEEC6979286C36AF002E020F /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEC6978286C36AF002E020F /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		FEB649C1286DDFF3009F1673 /* RecordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
 		FEB649C9286DE004009F1673 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		FEB7A0C4286C8FC800AB1542 /* ViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewContoller.swift; sourceTree = "<group>"; };
+		FED79BC2286EF80C002195DD /* RecordListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListModel.swift; sourceTree = "<group>"; };
 		FEEC6978286C36AF002E020F /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 			children = (
 				FEB649AB286DDF1F009F1673 /* RecordListViewController.swift */,
 				FEB649AE286DDF1F009F1673 /* RecordListViewModel.swift */,
+				FED79BC2286EF80C002195DD /* RecordListModel.swift */,
 				FEB649AC286DDF1F009F1673 /* SubComponents */,
 			);
 			path = RecordListPage;
@@ -279,6 +282,7 @@
 				FEB649B4286DDF1F009F1673 /* FrequencyView.swift in Sources */,
 				FEB649CA286DE004009F1673 /* UIButton+.swift in Sources */,
 				FEB649BD286DDFEE009F1673 /* FileData.swift in Sources */,
+				FED79BC3286EF80C002195DD /* RecordListModel.swift in Sources */,
 				FEB649B9286DDF1F009F1673 /* PlayerViewController.swift in Sources */,
 				FEB649B2286DDF1F009F1673 /* RecordViewController.swift in Sources */,
 				FEA582F628697CE0009316D8 /* AppDelegate.swift in Sources */,

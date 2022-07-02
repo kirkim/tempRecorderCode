@@ -9,41 +9,25 @@ import Foundation
 import SwiftUI
 
 class RecordListViewModel {
-    private var cellData: [String] = []
-    private let networkManager = RecordNetworkManager()
+    private let model = RecordListModel()
     
     func getCellData(_ indexPath: IndexPath) -> String {
-        return cellData[indexPath.row]
+        return model.getCellData(indexPath)
     }
     
     func getCellTotalCount() -> Int {
-        return cellData.count
+        return model.getCellTotalCount()
     }
     
     func update(completion: (() -> ())? = nil) {
-        networkManager.getRecordList { [weak self] data in
-            guard let data = data else { return }
-            self?.cellData = data
-            completion?()
-        }
+        model.update(completion: completion)
     }
     
     func deleteCell(_ indexPath: IndexPath, completion: @escaping () -> ()) {
-        let filename = cellData[indexPath.row]
-        networkManager.deleteRecord(filename: filename) { isDeleted in
-            if (isDeleted == true) {
-                self.cellData = self.cellData.filter { $0 != filename }
-                    completion()
-            } else {
-                
-            }
-        }
+        model.deleteCell(indexPath, completion: completion)
     }
     
-//    func didSelectedCell(_ indexPath: IndexPath, completion: @escaping (Data?) -> ()) {
-//        let filename = cellData[indexPath.row]
-//        networkManager.getRecordData(filename: filename) { data in
-//            completion(data)
-//        }
-//    }
+    func swapByPress(with sender: UILongPressGestureRecognizer, to tableView: UITableView) {
+        model.swapByPress(with: sender, to: tableView)
+    }
 }
