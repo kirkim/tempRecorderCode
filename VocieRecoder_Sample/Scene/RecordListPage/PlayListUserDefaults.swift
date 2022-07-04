@@ -7,10 +7,10 @@
 
 import Foundation
 
-class RecordPlaylistDB {
+class PlayListUserDefaults {
     private let userDefaults = UserDefaults(suiteName: "playList")
     
-    func update(playList: [String]) {
+    func save(playList: [String]) {
         userDefaults?.setValue(playList, forKey: "playList")
     }
     
@@ -19,4 +19,12 @@ class RecordPlaylistDB {
         return savedData
     }
     
+    func update(networkData: [String]) -> [String] {
+        let frontList = getData().filter { networkData.contains($0) }
+        let backList = networkData.filter { frontList.contains($0) == false }
+
+        let result = frontList + backList
+        save(playList: result)
+        return result
+    }
 }
